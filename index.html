@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curved Letters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__logo">女王の教室</div>
+      <div class="navbar__description-box">
+        <marquee class="navbar__description">
+          日本という国は、 そういう特権階級の人たちが 楽しく幸せに暮らせるように
+          あなたたち凡人が安い給料で働き 高い税金を払うことで
+          成り立っているんです。
+        </marquee>
+      </div>
+    </div>
+    <div id="circle">「クリックして！」</div>
+    <svg
+      id="text-curve__container"
+      viewBox="0 -100 760 250"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        id="text-curve"
+        d="M.18 100.22c58-22 109-100 259-99 192-10 302 88 516 88"
+        fill="none"
+      ></path>
+      <text y="40" class="text-curve__text">
+        <textPath id="text-curve__path" href="#text-curve" startOffset="12">
+          他責思考から いい加減、目覚めなさい！
+        </textPath>
+      </text>
+    </svg>
+    <div class="intro-image__wrapper">
+      <img src="./images/12.png" alt="intro_image" class="intro-image__image" />
+      <img
+        src="./images/eye.svg"
+        alt="intro_image1"
+        class="floating_eye eye01"
+      />
+      <img
+        src="./images/eye.svg"
+        alt="intro_image2"
+        class="floating_eye eye02"
+      />
+      <img
+        src="./images/eye.svg"
+        alt="intro_image3"
+        class="floating_eye eye03"
+      />
+    </div>
+    <p id="intro-paragraph">
+      「いい加減、目覚めなさい」は、ドラマ
+      「女王の教室」で天海祐希さんが繰り出す辛辣なセリフです。
+      世の中の状況からして、そろそろ日本人も目を覚まさなければならないのでは？
+      そんな感じがする今日この頃です。
+      はたして、日本人は「今だけ金だけ自分だけ」の呪縛から抜け出すことができるのでしょうか？
+      それでは、動画をお楽しみください。
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>

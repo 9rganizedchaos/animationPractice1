@@ -1,0 +1,127 @@
+@keyframes eyeMoving {
+  0% {
+    transform: translate3d(0px, -15%, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 5%, 0px);
+  }
+}
+
+@keyframes eyeMovingReverse {
+  0% {
+    transform: translate3d(0px, 5%, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -15%, 0px);
+  }
+}
+
+@keyframes movingLetters {
+  0% {
+    transform: translate3d(0%, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+body {
+  height: 250vh;
+}
+
+.navbar * {
+  mix-blend-mode: difference;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+  margin-top: 5vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+}
+.navbar__logo {
+  margin-left: 7.5vw;
+  font-size: 7.5vh;
+  overflow: hidden;
+  margin-top: -2.5vh;
+}
+.navbar__description-box {
+  width: 25vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.navbar__description {
+  color: white;
+  display: inline;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #cb4b16;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin: -100px 0 0 -100px;
+}
+
+#text-curve__container {
+  position: relative;
+  top: 100vh;
+}
+.text-curve__text {
+  font-size: 6vh;
+}
+.intro-image__wrapper {
+  position: relative;
+  top: 560px;
+  left: 25px;
+  z-index: -1;
+}
+.intro-image__image {
+  width: 110vh;
+  object-fit: cover;
+}
+.floating_eye {
+  position: relative;
+  width: 125px;
+  z-index: 100;
+}
+.floating_eye.eye01 {
+  top: -325px;
+  left: -145px;
+  animation: eyeMovingReverse 1s alternate infinite;
+}
+.floating_eye.eye02 {
+  top: -200px;
+  left: -960px;
+  animation: eyeMoving 1s alternate infinite;
+}
+.floating_eye.eye03 {
+  top: 15px;
+  left: -700px;
+  animation: eyeMoving 1s alternate infinite;
+}
+#intro-paragraph {
+  position: relative;
+  width: 40%;
+  top: 425px;
+  left: 775px;
+}
